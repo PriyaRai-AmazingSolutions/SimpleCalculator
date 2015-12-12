@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tvResultHint">Your Result Here</string>
+    <string name="tvHistoryHint">History</string>
+    <string name="btAddText">+</string>
+    <string name="btSubText">-</string>
+    <string name="btMulText">*</string>
+    <string name="btDivText">/</string>
+    <string name="btOneText">1</string>
+    <string name="btTwoText">2</string>
+    <string name="btThreeText">3</string>
+    <string name="btFourText">4</string>
+    <string name="btFiveText">5</string>
+    <string name="btSixText">6</string>
+    <string name="btSevenText">7</string>
+    <string name="btEightText">8</string>
+    <string name="btNineText">9</string>
+    <string name="btZeroText">0</string>
+    <string name="btFactorialText">!</string>
+    <string name="btPercentText">%</string>
+    <string name="btClearText">C</string>
+    <string name="btBackspaceText">&lt;-</string>
+    <string name="btDecimalText">.</string>
+    <string name="btEqualsText">=</string>
+
+</resources>

@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.AmazingSolutions.simplecalculator.SimpleCalculator" >
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/medium_Text_Size"
+        android:hint="@string/tvResultHint" />
+    <TextView 
+        android:id="@+id/tvHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResult"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_alignRight="@id/tvResult"
+        android:textSize="@dimen/medium_Text_Size"
+        android:hint="@string/tvHistoryHint"
+        />
+     
+    <GridLayout
+        android:id="@+id/glFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHistory"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btOneText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btFourText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btSevenText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btZero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btZeroText"
+            android:textSize="@dimen/small_Text_Size" />
+    </GridLayout>
+    
+    <GridLayout
+        android:id="@+id/glSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/glFirst"
+        android:layout_alignTop="@id/glFirst"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btTwoText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btFiveText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btEightText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btDecimalText"
+            android:textSize="@dimen/small_Text_Size" />
+    </GridLayout>
+    
+    <GridLayout
+        android:id="@+id/glThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/glSecond"
+        android:layout_alignTop="@id/glSecond"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btThreeText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btSixText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btNine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btNineText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btEquals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btEqualsText"
+            android:textSize="@dimen/small_Text_Size" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/glBasicFunctions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/glThird"
+        android:layout_alignTop="@id/glThird"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btAddText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btSubText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btMul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btMulText"
+            android:textSize="@dimen/small_Text_Size" />
+
+        <Button
+            android:id="@+id/btDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btDivText"
+            android:textSize="@dimen/small_Text_Size" />
+    </GridLayout>
+    
+     <GridLayout 
+        android:id="@+id/glBasicControls"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/glFirst"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/glFirst"
+        android:orientation="horizontal"
+        >
+        
+        <Button 
+            android:id="@+id/btClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btClearText"
+            android:textSize="@dimen/small_Text_Size"/>
+        
+        <Button 
+            android:id="@+id/btBackspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btBackspaceText"
+            android:textSize="@dimen/small_Text_Size"/>
+        
+    </GridLayout>
+
+</RelativeLayout>
